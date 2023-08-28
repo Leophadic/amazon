@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/82e516008a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="js-amazon-header amazon-header">
+<section class="card1">
+    <a href="." class="logo">
+<img class="amazonlogo" src="img/amazon-logo-white (2).jpg" alt="">
+<img class="smalllogo" src="img/amazon-mobile-logo-white (2).jpg" alt="">
+    </a>
+</section>
+<section class="card2">
+    <input class="search" type="text" placeholder="Search"  >
+     <button type="button"class="js-search-button search-button" data-testid="search-button">
+        <img src="img/icon1.png" alt="">
+     </button>
+</section>
+<section class="card3">
+    <a class="orders-link header-link" href="orders">
+        <span class="returns-text">Returns</span> <br>
+        <span class="orders-text">&amp; Orders</span>
+      </a>
+
+      <a class="cart-link header-link" href="checkout">
+        <img src="img/cart-icon.jpg" alt="">
+        <div class="js-cart-quantity cart-quantity" data-testid="cart-quantity">
+          23
+        </div>
+        <div class="cart-text">Cart</div>
+      </a>
+</section>
+<div class="toggle_btn">
+  <img src="img/hamburger-menu.jpg" alt="" width="25px">
+   </div>
+   <div class="dropdown_menu">
+    <div class="js-hamburger-menu-dropdown hamburger-menu-dropdown" data-testid="hamburger-menu-dropdown">
+      <a class="hamburger-menu-link" href="orders">
+        Returns &amp; Orders
+      </a>
+      <a class="hamburger-menu-link" href="checkout">
+        Cart (<span class="js-cart-quantity-mobile cart-quantity-mobile" data-testid="cart-quantity-mobile">24</span>)
+      </a>
+    </div>
+   </div>
+</header> 
+
+<script>
+const toggleBtn = document.querySelector('.toggle_btn')
+const toggleBtnIcon = document.querySelector('.toggle_btn i')
+const dropDownMenu = document.querySelector('.dropdown_menu')
+
+
+toggleBtn.onclick = function () {
+dropDownMenu.classList.toggle('open')
+const isOpen = dropDownMenu.classList.contains('open')
+
+toggleBtnIcon.classList = isOpen
+? 'fa-solid fa-xmark'
+: 'fa-solid fa-bars'
+}
+</script>
+<main>
+  <div class="grid">
+  <div class="product">
+    <img src="img/socks.jpg" alt="" height="200px">
+<p>Black and gray athlethic <br> cutton socks - 6 pairs</p>
+<img class="rating" src="img/rating-45.png" alt="">
+<h5>$10.0</h5>
+<select name="" id="">
+  <option selected value="1">1</option>
+  <option value="2">2</option>
+  <option value="2">3</option>
+  <option value="2">4</option>
+  <option value="2">5</option>
+</select>
+<button type="button">Add To Cart</button>
+</div>
+
+  <div class="product">
+    <img src="img/basketball.jpg" alt="">
+    <p>Intermediate Size Basketball</p>
+    <img class="rating" src="img/rating-45.png" alt="">
+    <h5>$20.0</h5>
+    <select name="" id="">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="2">3</option>
+      <option value="2">4</option>
+      <option value="2">5</option>
+    </select>
+    <button type="button">Add To Cart</button>
+  </div>
+  <div class="product">
+    <img src="img/t-shirt.jpg" alt="">
+    <p>Adults Plain Cotton T-Shirt - 2 Pack</p>
+    <img class="rating" src="img/rating-45.png" alt="">
+    <h5>$15.4</h5>
+    <select name="" id="">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="2">3</option>
+      <option value="2">4</option>
+      <option value="2">5</option>
+    </select>
+    <button type="button">Add To Cart</button>
+  </div>
+  <div class="product">
+    <img src="img/head10.jpg" alt="">
+    <p>Nice Hear-Pod for both gender - 1pair</p>
+    <img class="rating" src="img/rating-45.png" alt="">
+    <h5>$80.0</h5>
+    <select name="" id="">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="2">3</option>
+      <option value="2">4</option>
+      <option value="2">5</option>
+    </select>
+    <button type="button">Add To Cart</button>
+  </div>
+  <div class="product">
+    <img src="img/black-2-slot-toaster.jpg" alt="" height="200px">
+    <p>2 Slot Toaster - Black</p>
+    <img class="rating" src="img/rating-45.png" alt="">
+    <h5>$100.0</h5>
+    <select name="" id="">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="2">3</option>
+      <option value="2">4</option>
+      <option value="2">5</option>
+    </select>
+    <button type="button">Add To Cart</button>
+  </div>
+  <div class="product">
+    <img class="platess" src="img/white-dinner-plate-set.jpg" alt="">
+    <p>6 Piece White Dinner Plate Set</p>
+    <img class="rating" src="img/rating-45.png" alt="">
+    <h5>$30.0</h5>
+    <select name="" id="">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="2">3</option>
+      <option value="2">4</option>
+      <option value="2">5</option>
+    </select>
+    <button type="button">Add To Cart</button>
+  </div>
+  <div class="product">
+    <img class="shirt" src="img/sweatshirt-yellow.jpg" alt="">
+    <p>Plain Hooded Fleece Sweatshirt</p>
+    <img class="rating" src="img/rating-45.png" alt="">
+    <h5>$30.0</h5>
+    <select name="" id="">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="2">3</option>
+      <option value="2">4</option>
+      <option value="2">5</option>
+    </select>
+    <button type="button">Add To Cart</button>
+  </div>
+  <div class="product">
+<img src="img/luxury-tower-set-6-piece.jpg" alt="">
+<p>luxury-tower-set-6-piece suitable for both gender</p>
+<img class="rating" src="img/rating-45.png" alt="">
+<h5>$50.0</h5>
+<select name="" id="">
+  <option selected value="1">1</option>
+  <option value="2">2</option>
+  <option value="2">3</option>
+  <option value="2">4</option>
+  <option value="2">5</option>
+</select>
+<button type="button">Add To Cart</button>
+  </div>
+  <div class="product">
+    <img class="plates" src="img/knit-athletic-sneakers-gray.jpg" alt="">
+    <p>knit-athletic-sneakers-gray suitable for both gender -1pair</p>
+    <img class="rating" src="img/rating-45.png" alt="">
+    <h5>$150</h5>
+    <select name="" id="">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="2">3</option>
+      <option value="2">4</option>
+      <option value="2">5</option>
+    </select>
+    <button type="button">Add To Cart</button>
+      </div>
+   <div class="product">
+   <img class="plates" src="img/round-sunglasses-black.jpg" alt="">
+   <p>Waterproof Knit Athletic Sneakers - Gray</p>
+   <img class="rating" src="img/rating-45.png" alt="">
+    <h5>$20.0</h5>
+    <select name="" id="">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="2">3</option>
+      <option value="2">4</option>
+      <option value="2">5</option>
+    </select>
+    <button type="button">Add To Cart</button>
+     </div>
+     <div class="product">
+    <img  class="shirt" src="img/electric-glass-and-steel-hot-water-kettle.webp" alt="">
+    <p>Electric Glass and Steel Hot Tea Water Kettle - 1.7-Liter</p>
+    <img class="rating" src="img/rating-45.png" alt="">
+    <h5>$200.0</h5>
+    <select name="" id="">
+      <option selected value="1">1</option>
+      <option value="2">2</option>
+      <option value="2">3</option>
+      <option value="2">4</option>
+      <option value="2">5</option>
+    </select>
+    <button type="button">Add To Cart</button>
+    </div>
+    <div class="product">
+      <img  class="stud" src="img/sky-flower-stud-earrings.webp" alt="">
+      <p>Sterling Silver Sky Flower Stud Earrings</p>
+      <img class="rating" src="img/rating-45.png" alt="">
+      <h5>$5.0</h5>
+      <select name="" id="">
+        <option selected value="1">1</option>
+        <option value="2">2</option>
+        <option value="2">3</option>
+        <option value="2">4</option>
+        <option value="2">5</option>
+      </select>
+      <button type="button">Add To Cart</button>
+      </div>
+      <div class="product">
+        <img  class="studs" src="img/men-athletic-shoes-green.jpg" alt="">
+        <p>Men's Athletic Sneaker</p>
+        <img class="rating" src="img/rating-45.png" alt="">
+        <h5>$50.0</h5>
+        <select name="" id="">
+          <option selected value="1">1</option>
+          <option value="2">2</option>
+          <option value="2">3</option>
+          <option value="2">4</option>
+          <option value="2">5</option>
+        </select>
+        <button type="button">Add To Cart</button>
+        </div>
+        <div class="product">
+          <img  class="cofee" src="img/coffeemaker-with-glass-carafe-black.jpg" alt="">
+          <p>Coffeemaker with Glass Carafe and Reusable Filter -</p>
+          <img class="rating" src="img/rating-45.png" alt="">
+          <h5>$22.5</h5>
+          <select name="" id="">
+            <option selected value="1">1</option>
+            <option value="2">2</option>
+            <option value="2">3</option>
+            <option value="2">4</option>
+            <option value="2">5</option>
+          </select>
+          <button type="button">Add To Cart</button>
+          </div>
+          <div class="product">
+            <img  class="Curtain" src="img/blackout-curtains-black.jpg" alt="">
+            <p>Blackout Curtains Set 42 x 84-Inch - Black, 2 Panels</p>
+            <img class="rating" src="img/rating-45.png" alt="">
+            <h5>$40.90</h5>
+            <select name="" id="">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="2">3</option>
+              <option value="2">4</option>
+              <option value="2">5</option>
+            </select>
+            <button type="button">Add To Cart</button>
+            </div>
+    </div>
+</main>
+
+<!-- <section class="right-section-mobile">
+            <img class="js-hamburger-menu-toggle hamburger-menu-toggle" src="img/hamburger-menu.jpg" data-testid="hamburger-menu-toggle">
+      </section>
+
+    <div class="js-hamburger-menu-dropdown hamburger-menu-dropdown" data-testid="hamburger-menu-dropdown">
+        <a class="hamburger-menu-link" href="orders">
+          Returns &amp; Orders
+        </a>
+        <a class="hamburger-menu-link" href="checkout">
+          Cart (<span class="js-cart-quantity-mobile cart-quantity-mobile" data-testid="cart-quantity-mobile">24</span>)
+        </a>
+      </div> -->
+
+    </header>
+</body>
+</html>
