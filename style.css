@@ -381,6 +381,7 @@ select:hover{
     border: none;
     font-weight: bolder;
     background-color: orange;
+    color: black;
 }
 .plate{
     max-width: 100%;
@@ -519,7 +520,7 @@ margin-left: 5px;
     }
 }
 @media  screen and (max-width:295px) {
-    .product{
+     .product{
         width: 150px;
     }
     .dropdown_menu.open{
